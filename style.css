@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+    background: linear-gradient(to left, 
+    rgb(255, 201, 226),
+    rgb(248, 240, 232))
+    
+}
+header{
+    overflow: hidden;
+
+    padding: 30px;
+    background: linear-gradient(to right, 
+                rgb(226, 159, 179) ,
+                rgb(243, 224, 231)),
+                url(../img/guitar-1.jpg);
+    height: 90vh;
+    width: 100vw;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 22px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container h1{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+form{
+    position: relative;
+    display: flex;
+    width: 500px;
+}
+input{
+    width: 100%;
+    max-width: 100%;
+    height: 45px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+}
+button{
+    width: 100px;
+    max-width: 100%;
+    /* height: 40px; */
+    background: #e77cdd;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+    font-weight: 600;
+    outline: none;
+}
+button:hover{
+    transform: scale(0.95);
+}
+li{
+    list-style: none;
+}
+
+.result{
+    color: rgb(19, 18, 18);
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+
+}
+
+.song-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,0);
+    background: linear-gradient(to left, 
+    rgb(235, 202, 202),
+    rgb(228, 147, 194))
+
+}
+.song-list li{
+    margin-bottom: 20px;
+    width: 450px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: overline;
+    text-decoration-color: rgb(231, 88, 231);
+    position: relative;
+    /* line-height: 30px; */
+}
+
+.song-list li::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    left: -20px;
+    bottom: -4px;
+    height: 3px;
+    background: rgb(241, 227, 241);
+    display: block;
+}
+.song-list li div{
+    float: left;
+}
+
+.song-list li span{
+    float: right;
+    background-color: #181718;
+    border: 0;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: 800px) {
+    header{
+        height: 70vh;
+        width: 95%vw;
+    }
+    .container{
+        font-size: 20px;
+        
+    }
+    form{
+        max-width: 300px;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        padding: 12px 20px;
+  
+    }
+    button{
+        width: 80px;
+        max-width: 100%;
+    }
+    .song-list li{
+        margin-bottom: 15px;
+        max-width: 250px;
+        letter-spacing: 0.5px;
+        font-size: 17px;
+        
+    }
+   
+}
