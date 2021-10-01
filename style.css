@@ -10,18 +10,17 @@ body{
     font-family: 'Dancing Script', cursive;
     background: linear-gradient(to left, 
     rgb(255, 201, 226),
-    rgb(248, 240, 232))
-    
+    rgb(248, 240, 232)) no-repeat;
+    height: 100%;
 }
 header{
     overflow: hidden;
-
     padding: 30px;
     background: linear-gradient(to right, 
                 rgb(226, 159, 179) ,
                 rgb(243, 224, 231)),
-                url(../img/guitar-1.jpg);
-    height: 90vh;
+                url(../img/guitar-1.jpg) no-repeat;
+    height: 170vh;
     width: 100vw;
     border: none;
     background-repeat: no-repeat;
@@ -35,7 +34,7 @@ header{
     position: absolute;
     color: rgb(15, 13, 13);
     font-size: 22px;
-    top: 40%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -87,7 +86,6 @@ li{
     margin-top: 20px;
     position: relative;
     display: block;
-
 }
 
 .song-list{
@@ -96,6 +94,7 @@ li{
     flex-direction: column;
     position: absolute;
     left: 50%;
+    height: 100%;
     transform: translate(-50% ,0);
     background: linear-gradient(to left, 
     rgb(235, 202, 202),
@@ -103,8 +102,8 @@ li{
 
 }
 .song-list li{
-    margin-bottom: 20px;
-    width: 450px;
+    width: 60vw;
+    padding: 16px;
     justify-content: space-evenly;
     letter-spacing: 1px;
     font-weight: 500;
@@ -118,10 +117,11 @@ li{
 .song-list li::after{
     content: "";
     position: absolute;
-    right: -20px;
-    left: -20px;
+    right: 0px;
+    left: 0px;
     bottom: -4px;
     height: 3px;
+    width: 60vw;
     background: rgb(241, 227, 241);
     display: block;
 }
